@@ -23,7 +23,7 @@ printf("sub result: %d\n",z);
 z=x*y;
 printf("mult result: %d\n",z);
 z=x/y;
-printf("div result: %d\n",z);
+printf("div result: %d\n",z); // for a division it's better to store the result in a float because like this we wouldn't lose .1
 z=x%y;
 printf("modulus result: %d\n",z);
 z++;
@@ -40,5 +40,11 @@ printf("div par 2 dans un int = %d\n",z);
 unsigned short int c = 10;
 c=z-c;
 printf("calcul qui a arrive a -10 un int = %d\n",c);
+
+int p = 2;
+int U = 3;
+float W=p/(float)U;
+
+printf("caca %0.5f\n", W);
 }
 
